@@ -1,8 +1,3 @@
-import { doGet } from './server/webapp';
-import './es6';
+import { viewMainCard } from './home/cards';
 
-global.doGet = doGet;
-
-global.sendmail = (email = 'amit@labnol.org') => {
-  GmailApp.sendEmail(email, 'It works!', 'Hello Google Apps Script');
-};
+global.viewMainCard = viewMainCard;
